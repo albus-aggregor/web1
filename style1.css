@@ -6,19 +6,22 @@
 body{
 	margin: 0 auto;
 }
-header{
+.header{
+	margin: 0 auto;
+	display: flex;
+	flex-flow: column;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	width: 1080px;
+}
+.header .nav1{
 	position: sticky;
 	top: 0;
 	left: 0;
 	background-color: #fff;
-}
-.header{
-	margin: 0 auto;
+	z-index: 99999;
 	display: flex;
-	justify-content: space-between;
-	flex-wrap: wrap;
-	width: 1080px;
-	padding: 30px 0px;
+	padding: 20px 0;
 }
 .header .nav{
 	flex: 1;
@@ -43,22 +46,15 @@ header{
 .header .nav li a:hover{
 	color: #8772ff;
 }
-.home{
-	margin: 0 auto;
-	display: flex;
-	flex-flow: column;
-	flex-wrap: wrap;
-	width: 1080px;
-}
 .h0{
 	flex: 1;
 	display: flex;
 	flex-flow: column;
 	justify-content: space-between;
-	margin: 100px 0;
 	flex-wrap: wrap;
 	gap: 50px;
 	width: min-content;
+	padding: 50px 0;
 }
 .h1{
 	flex: 1;
@@ -106,13 +102,12 @@ header{
 	display: flex;
 	flex-flow: column;
 	flex-wrap: wrap;
-	gap: 50px;
+	gap: 30px;
 	width: 960px;
+	padding: 100px 0;
 }
 .r1{
 	color: #fff;
-	padding-top: 30px;
-
 }
 .r2{
 	display: flex;
@@ -127,7 +122,6 @@ header{
 	flex-flow: column;
 	flex-wrap: wrap;
 	gap:50px;
-	margin-bottom: 100px;
 }
 .r3 h2{
 	font-size: 2em;
@@ -150,8 +144,7 @@ header{
 	flex-flow: column;
 	flex-wrap: wrap;
 	gap:50px;
-	margin-top: 50px;
-	margin-bottom: 100px;
+	justify-content: center;
 }
 .r4 h2{
 	font-size: 2em;
@@ -168,15 +161,17 @@ header{
 	font-weight: bold;
 }
 .c{
-	margin: 0 auto;
+	margin: 0px auto;	
+	width: 1080px;
+	display: flex;
+	flex-flow: column;
 }
 .c1{
-	margin: 30px auto;
 	display: flex;
 	flex-flow: column;
 	flex-wrap: wrap;
 	gap:20px;
-	width: 1080px;
+	padding: 100px 0;
 }
 .c1 .c2{
 	margin: 0 auto;
@@ -190,20 +185,20 @@ header{
 .c4{
 	display: flex;
 	flex-flow: row;
-	flex-wrap: wrap;
-	gap:50px;
-	margin: 50px auto;
+	gap:30px;
+	margin: 0px auto;
+	padding-top: 40px;
 }
 .c4 .c5{
-	flex: 1;
 	line-height: 1.5;
 	display: flex;
 	flex-flow: column;
 	flex-wrap: wrap;
 	gap:30px;
-	padding: 30px;
-	border:  1px solid #bdbdbe;
-	height: min-content;
+	padding: 20px;
+	border:  1px solid #eeeef2;
+	width: 300px;
+	height: 300px;
 }
 .c5 h5{
 	font-size: 1.5em;
@@ -211,6 +206,7 @@ header{
 .c5 a{
 	text-decoration: none;
 	color: #8475f4;
+	text-transform: uppercase;
 }
 .c5 a:hover{
 	color: #fff;
@@ -220,15 +216,15 @@ header{
 	color: #fff;
 }
 .c4 .c6{
-	flex: 1;
 	line-height: 1.5;
 	display: flex;
 	flex-flow: column;
 	flex-wrap: wrap;
 	gap:30px;
-	padding: 30px;
-	border:  1px solid #bdbdbe;
-	height: min-content;
+	padding: 20px;
+	border:  1px solid #eeeef2;
+	width: 300px;
+	height: 300px;
 }
 .c6 h5{
 	font-size: 1.5em;
@@ -236,6 +232,7 @@ header{
 .c6 a{
 	color: #8475f4;
 	text-decoration: none;
+	text-transform: uppercase;
 }
 .c6 a:hover{
 	color: #fff;
@@ -245,15 +242,15 @@ header{
 	color: #ffe0e5;
 }
 .c4 .c7{
-	flex: 1;
 	line-height: 1.5;
 	display: flex;
 	flex-flow: column;
 	flex-wrap: wrap;
 	gap:30px;
-	padding: 30px;
-	border:  1px solid #bdbdbe;
-	height: min-content;
+	padding: 20px;
+	border:  1px solid #eeeef2;
+	width: 300px;
+	height: 300px;
 }
 .c7 h5{
 	font-size: 1.5em;
@@ -261,6 +258,7 @@ header{
 .c7 a{
 	color: #8475f4;
 	text-decoration: none;
+	text-transform: uppercase;
 }
 .c7 a:hover{
 	color: #fff;
@@ -269,16 +267,12 @@ header{
 	background-color: #f05d7a;
 	color: #fff;
 }
-.i{
-	margin: 0 auto;
-}
 .i1{
-	margin: 30px auto;
 	display: flex;
 	flex-flow: column;
 	flex-wrap: wrap;
-	gap:30px;
-	width: 1080px;
+	gap:20px;
+	padding: 50px 0;
 }
 .i1 .i2{
 	margin: 0 auto;
@@ -296,6 +290,7 @@ header{
 .i4 .nav{
 	list-style: none;
 	display: flex;
+	gap: 30px;
 }
 .nav li{
 	margin: 0 10px;
@@ -311,42 +306,27 @@ header{
 	display: flex;
 	flex-flow: row;
 	flex-wrap: wrap;
-	width: 1080px;
-	gap: 80px;
+	gap: 20px;
+	margin: 0 auto;
+	padding-top: 40px;
 }
 
 .i5 img{
 	flex: 1;
-	height: revert;
 	width: 400px;
 }
-.t{
-	margin: 0 auto;
-}
 .t1{
-	margin: 30px auto;
-	display: flex;
-	flex-flow: column;
-	flex-wrap: wrap;
-	gap:20px;
-	width: 1080px;
-}
-.t2{
-	font-size: 1em;
-	font-weight: bold;
-	margin-top: 50px;
-}
-.t3{
 	display: flex;
 	flex-flow: row;
-	gap:20px;
+	gap: 20px;
+	padding: 100px 0;
 }
 .t4{
 	flex: 0.5;
 	display: flex;
 	flex-flow: column;
 	line-height: 1;
-	gap: 50px;
+	gap: 20px;
 }
 .t4 h2{
 	font-size: 2em;
@@ -362,7 +342,8 @@ header{
 	display: flex;
 	flex-flow: row;
 	gap: 50px;
-	margin: 30px;
+	margin: 0 50px;
+	padding-top: 40px;
 }
 .t6{
 	flex: 1;
@@ -424,16 +405,13 @@ header{
 .t13 p{
 	color: #bdbdbe;
 }
-.n{
-	margin: 0 auto;
-}
-.n .n1{
-	margin: 30px auto;
+.n1{
+	margin: 0px auto;
 	display: flex;
 	flex-flow: row;
-	flex-wrap: wrap;
 	gap:20px;
 	width: 900px;
+	padding-bottom: 100px;
 }
 .n1 img{
 	flex: 1;
@@ -444,18 +422,17 @@ header{
 	margin: 0 auto;
 	background-color: #f05d7a;
 	color: #fff;
+	padding: 100px 0 50px 0;
 }
 .a .a1{
-	margin: 30px auto 0 auto;
 	display: flex;
 	flex-flow: column;
-	flex-wrap: wrap;
 	gap:30px;
+	margin: 0 auto;
 	width: 1080px;
 }
 .a1 .a2{
 	text-align:center;
-	padding-top: 30px;
 	letter-spacing: 2px;
 }
 .a1 .a3{
