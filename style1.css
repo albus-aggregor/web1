@@ -44,7 +44,7 @@ header .nav li a{
 header .nav li a:hover{
 	color: #8772ff;
 }
-header .nav2{
+.nav2{
 	display: none;
 }
 .nav1 i{
@@ -482,6 +482,9 @@ header .nav2{
 	.header{
 		width: 85%;
 	}
+	.nav2{
+		display: none;
+	}
 	.r .r0{
 		width: 70%;
 	}
@@ -590,7 +593,7 @@ header .nav2{
 		width: 600px;
 	}
 }
-@media only screen and (min-width: 376px) and (max-width: 767px){
+@media only screen and (min-width: 551px) and (max-width: 767px){
 	header{
 		flex-flow: column;
 	}
@@ -598,24 +601,14 @@ header .nav2{
 		width: 80%;
 	}
 	header .icon{
-		flex: 1;
+		flex: .5;
 	}
-	.nav1 .nav{
-		display: none;
-	}
-	header .nav2{
+	.nav2{
 		display: none;
 	}
 	.nav1 i{
-		display: block;
+		display: none;
 		color: #5b43e3;
-	}
-	.nav2 .nav{
-		flex-flow: column;
-		align-items: center;
-		gap: 10px;
-    	margin: 0 auto;
-    	width: 60%;
 	}
 	.header{
 		width: 80%;
@@ -688,6 +681,9 @@ header .nav2{
 	}
 	header .icon{
 		flex: .6;
+	}
+	.nav2{
+		display: none;
 	}
 	.header{
 		width: 80%;
@@ -769,9 +765,10 @@ header .nav2{
 		width: 80%;
 	}
 }
-@media only screen and (max-width: 375px){
+@media only screen and (min-width: 320px) and (max-width: 550px){
 	header{
 		flex-flow: column;
+		padding: 20px 0;
 	}
 	header .nav1{
 		width: 300px;
@@ -786,24 +783,35 @@ header .nav2{
 		display: block;
 		color: #5b43e3;
 	}
-	.nav2 .nav{
-		flex-flow: column;
-		align-items: center;
-		gap: 10px;
-		
-	}
-	header .nav2{
+	.nav2{
 		display: none;
-	}
-	.nav1 i{
-		display: block;
-		color: #5b43e3;
+		background-color: #fff;
+		width: 50%;
+		margin: 0 auto;
+		position: absolute;
+		left: 40%;
 	}
 	.nav2 .nav{
-		flex-flow: column;
-		align-items: center;
-		gap: 10px;
-		
+		list-style-type: none;
+		border: 1px solid;
+		border-left-color: #5b43e3;
+		border-top-color: #5b43e3;
+		border-bottom-color: #f05d7a;
+		border-right-color: #f05d7a;
+		text-align: center;
+	}
+	.nav2 .nav li{
+		padding: 20px 0;
+	}
+	.nav2 .nav a{
+		text-decoration: none;
+		padding: 10px 0;
+		color: #000;
+	}
+	.nav2 .nav li:hover{
+		background-color: #f05d7a;
+		color: #7720fa;
+		box-shadow: 0 0 5px #f05d7a, 0 0 10px #f05d7a, 0 0 15px #f05d7a, 0 0 20px #f05d7a;
 	}
 	.header{
 		width: 300px;
